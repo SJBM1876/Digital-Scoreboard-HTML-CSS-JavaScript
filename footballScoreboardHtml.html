@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="footballScoreboardCss.css">
+        <title>Digital Scoreboard</title>
+    </head>
+    <body>
+        <div class="team" id="home-team">
+            <h2 id="home-team-name"></h2>
+            <span id="home-score">0</span>
+            <button onclick="incrementScore('home')">Goal</button>
+            <button onclick="updateTeamName('home')">Home Team Name</button>
+        </div>
+        <div class="team" id="away-team">
+            <h2 id="away-team-name"></h2>
+            <span id="away-score">0</span>
+            <button onclick="incrementScore('away')">Goal</button>
+            <button onclick="updateTeamName('away')">Away Team Name</button>
+        </div>
+
+        <script src="footballScoreboardJavaScript.js"></script>
+    </body>
+</html>
